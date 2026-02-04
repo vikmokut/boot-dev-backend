@@ -7,7 +7,8 @@ BookBot is my first [Boot.dev](https://www.boot.dev) project!
     * The count of each character in the text.
 * Usage: `python3 main.py <path_to_text_file>`
 * Sample output:
----insert image---
+
+![Sample program output](sample_output.png)
 
 ### Concepts Reviewed:
 * Problem solving
@@ -19,5 +20,6 @@ BookBot is my first [Boot.dev](https://www.boot.dev) project!
 * Loops and conditional statements
 * CLI and project organization
 
-==================== ***** ====================
+![Certification](bookbot.png)
 
+#
