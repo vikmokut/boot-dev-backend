@@ -6,30 +6,32 @@ import (
 )
 
 func printPrimes(max int) {
-	min := 2
-	i := 3
-	for min <= max {
-		if min == 2 {
-			fmt.Println(min)
-			min++
-			continue
-		} else if min%2 == 0 {
-			min++
+	for n := 2; n <= max; n++ {
+
+		if n == 2 {
+			fmt.Println(n)
 			continue
 		}
-		for i*i < min {
-			if min%i == 0 {
-				continue
+
+		if n%2 == 0 {
+			continue
+		}
+
+		isPrime := true
+
+		for i := 3; i*i <= n; i += 2 {
+			if n%i == 0 {
+				isPrime = false
+				break
 			}
-			i += 2
 		}
-		fmt.Println(min)
-		// increment before reiteration
-		min++
+
+		if isPrime {
+			fmt.Println(n)
+		}
 	}
 }
 
-// don't edit below this line
 
 func test(max int) {
 	fmt.Printf("Primes up to %v:\n", max)
